@@ -13,19 +13,19 @@ const Form = () => {
             <form action="" className='form-container'>
                 <label htmlFor="">Username: </label>
                 <input type="username" 
-                    onChange={}
+                    onChange={(e) => setUsername(e.target.value)}
                     type='username'
                     value='username'
                 />
                 <label htmlFor="email">Email: </label>
                 <input type="email" 
-                    onChange={}
+                    onChange={(e) => setEmail(e.target.value)}
                     type='email'
                     value='email'
                 />
                 <label htmlFor="password">Passowrd: </label>
                 <input type="password" 
-                    onChange={}
+                    onChange={(e) => setPassword(e.target.value)}
                     type='password'
                     value='password'
                 />
