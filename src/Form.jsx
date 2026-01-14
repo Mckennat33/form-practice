@@ -7,31 +7,45 @@ const Form = () => {
     const [ email, setEmail ] = useState('')
     const [ password, setPassword ] = useState('')
 
+const signUp = async (event) => {
+    event.preventDefault() 
+    console.log(username, email, password)
+}
+
+
     return (
-        <>
+        <div>
             <h1>Form Page</h1>
-            <form action="" className='form-container'>
-                <label htmlFor="">Username: </label>
-                <input type="username" 
-                    onChange={(e) => setUsername(e.target.value)}
-                    type='username'
-                    value='username'
-                />
-                <label htmlFor="email">Email: </label>
-                <input type="email" 
-                    onChange={(e) => setEmail(e.target.value)}
-                    type='email'
-                    value='email'
-                />
-                <label htmlFor="password">Passowrd: </label>
-                <input type="password" 
-                    onChange={(e) => setPassword(e.target.value)}
-                    type='password'
-                    value='password'
-                />
-                <button className='submit-bttn'>Submit form</button>
+            <form className='form-container' onSubmit={signUp} >
+                <label htmlFor="username">
+                Username:
+                    <input 
+                        onChange={(e) => setUsername(e.target.value)}
+                        type='text'
+                        id='username'
+                    />
+                 </label>
+
+                <label htmlFor="email">
+                Email: 
+                    <input  
+                        onChange={(e) => setEmail(e.target.value)}
+                        type='email'
+                        id='email'
+                    />
+                </label>
+
+                <label htmlFor="password">
+                Passowrd: 
+                    <input  
+                        onChange={(e) => setPassword(e.target.value)}
+                        type='password'
+                        id='password'
+                    />
+                </label>
+                <button className='submit-bttn' type='submit'  >Submit form</button>
             </form>
-        </>
+        </div>
     )
 }
 
