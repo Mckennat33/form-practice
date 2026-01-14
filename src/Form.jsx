@@ -29,7 +29,7 @@ const Form = () => {
                     type='password'
                     value='password'
                 />
-                <button>Submit form</button>
+                <button className='submit-bttn'>Submit form</button>
             </form>
         </>
     )
