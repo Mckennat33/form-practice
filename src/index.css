@@ -16,8 +16,15 @@ code {
 .form-container {
   display: flex;
   flex-direction: column;
+  
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
 .submit-bttn {
   margin-top: 20px;
 }
+
