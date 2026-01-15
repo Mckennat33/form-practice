@@ -16,6 +16,8 @@ code {
 .form-container {
   display: flex;
   flex-direction: column;
+  /* Aligning the form to the left of the page */
+  text-align: left; 
   
 }
 
