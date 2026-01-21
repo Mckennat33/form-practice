@@ -60,7 +60,7 @@ const signUpUrl = 'http://localhost:8000/signup'
                             />
                     </label>
                     <button className='submit-bttn' type='submit'  >Submit form</button>
-            </form>
+                </form>
             </div>
         </div>
     )
